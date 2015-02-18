@@ -47,16 +47,16 @@ Acme::Imouto - Imouto means small sister.
 
     use Acme::Imouto;
 
-    my $ane = Acme::Imouto->new($your_object)
-    if ($ane->is_ane) {
-      print "$ane is ane\n";
+    my $imouto = Acme::Imouto->new($your_object)
+    if ($imouto->is_imouto) {
+      print "$imouto is imouto\n";
     }
 
 Other way
 
-    use Acme::Imouto "ane";
+    use Acme::Imouto "imouto";
 
-    my $ane = ane $your_object
+    my $imouto = imouto $your_object
 
 =head1 DESCRIPTION
 
@@ -67,6 +67,7 @@ Acme::Imouto is joke module for Imouto lover.
 The following functions are exported only by request.
 
     ane
+    imouto
 
 =head1 METHODS
 
@@ -77,17 +78,27 @@ X<is_ane>
 
 Examin that the objec is ane.
 
+=item is_imouto
+X<is_imouto>
+
+Examin that the objec is imouto.
+
+=item is_kawaii
+X<is_kawaii>
+
+Return 1 if imouto is cute.
+
 =back
 
 =head1 LICENSE
 
-Copyright (C) Tomohiro Nishimura.
+Copyright (C) hisaichi5518.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
 =head1 AUTHOR
 
-Tomohiro Nishimura E<lt>tomohiro68@gmail.comE<gt>
+hisaichi5518 E<lt>hisaichi5518@gmail.comE<gt>
 
 =cut
